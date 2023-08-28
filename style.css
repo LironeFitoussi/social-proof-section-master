@@ -10,32 +10,38 @@ body {
     font-size: 15px;
 }
 
-h1 {
-    color: hsl(300, 43%, 22%);
-}
-
 .container {
     width: 70vw;
+    height: 70vh;
     display: grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 75px;
     grid-template-areas: "header header ratings ratings"
                           "footer footer footer footer"  ;
 }
 
 header {
     grid-area: header;
-    width: 100%;
+}
+
+header > h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 43px;
+    width: 67%;
 }
 
 header > p {
     color: hsl(303, 10%, 53%);
+    width: 80%;
 }
 
 .ratings {
     grid-area: ratings;
-    width: 35vw;
+    /* width: 35vw; */
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    justify-content: center;
 }
 
 .rate {
@@ -43,7 +49,7 @@ header > p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3vw;
+    gap: 2vw;
     border-radius: .5vw;
     padding: .5vh 2vw;
 }
@@ -67,9 +73,18 @@ header > p {
 
 footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
 }
+
 .recommender {
     background-color: hsl(300, 43%, 22%);
+    border-radius: .5vw;
+}
+
+.rec-header > img {
+    border-radius: 100%;
 }
 
 .rec-info > h2 {
