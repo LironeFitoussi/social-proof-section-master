@@ -6,7 +6,26 @@ body {
 }
 
 
+#COLORS {
+    /* ## Colors */
 
+    /* ### Primary */
+    /* Very Dark Magenta */
+    color: hsl(300, 43%, 22%);
+
+    /* Soft Pink */
+    color: hsl(333, 80%, 67%);
+
+    /* ### Neutral */
+    /* Dark Grayish Magenta */
+    color: hsl(303, 10%, 53%);
+
+    /* Light Grayish Magenta */
+    color: hsl(300, 24%, 96%);
+
+    /* White */
+    color: hsl(0, 0%, 100%);
+}
 
 .attribution {
     font-size: 11px;
