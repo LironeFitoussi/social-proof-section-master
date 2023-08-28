@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: 'League Spartan', sans-serif;
     font-size: 15px;
 }
@@ -9,12 +14,50 @@ h1 {
     color: hsl(300, 43%, 22%);
 }
 
+.container {
+    width: 70vw;
+    display: grid;
+    grid-template-areas: "header header ratings ratings"
+                          "footer footer footer footer"  ;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+}
+
 header > p {
     color: hsl(303, 10%, 53%);
 }
 
+.ratings {
+    grid-area: ratings;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
 .rate {
     background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    border-radius: .5vw;
+    padding: .5vh 2vw;
+}
+
+#reviews {
+    align-self: flex-start;
+}
+
+#report-guru {
+    align-self: center;
+}
+
+#best-tech {
+    align-self: flex-end;
 }
 
 .rate > p {
@@ -22,6 +65,9 @@ header > p {
     font-weight: 700;
 }
 
+footer {
+    grid-area: footer;
+}
 .recommender {
     background-color: hsl(300, 43%, 22%);
 }
