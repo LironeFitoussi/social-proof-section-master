@@ -13,6 +13,34 @@ header > p {
     color: hsl(303, 10%, 53%);
 }
 
+.rate {
+    background-color: hsl(300, 24%, 96%);
+}
+
+.rate > p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.recommender {
+    background-color: hsl(300, 43%, 22%);
+}
+
+.rec-info > h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.verBuyer {
+    color: hsl(333, 80%, 67%);
+}
+
+.comment {
+    color: #ffffff;
+}
+
 #COLORS {
     /* ## Colors */
 
