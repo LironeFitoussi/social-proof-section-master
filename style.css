@@ -69,6 +69,7 @@ header > p {
 .rate > p {
     color: hsl(300, 43%, 22%);
     font-weight: 700;
+    /* width: fit-content; */
 }
 
 footer {
@@ -78,6 +79,17 @@ footer {
     gap: 2vw;
 }
 
+#colton {
+    align-self: flex-start;
+}
+
+#irene {
+    align-self: center;
+}
+
+#anne {
+    align-self: flex-end;
+}
 .recommender {
     display: flex;
     flex-direction: column;
@@ -123,9 +135,9 @@ footer {
 }
 
 .comment {
-    color: #ffffff;
+    color: hsl(300, 24%, 96%);
     margin: 0;
-    line-height: 2vh;
+    line-height: 2.25vh;
 }
 
 #COLORS {
@@ -150,6 +162,8 @@ footer {
 }
 
 .attribution {
+    position: absolute;
+    bottom: 8px;
     font-size: 11px;
     text-align: center;
 }
