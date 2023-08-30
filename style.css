@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'League Spartan', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .container {
@@ -79,12 +79,32 @@ footer {
 }
 
 .recommender {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
     background-color: hsl(300, 43%, 22%);
     border-radius: .5vw;
+    padding: 5vh 2vw;
+    font-size: 15px;
+    height: fit-content;
+}
+
+.rec-header {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
 }
 
 .rec-header > img {
     border-radius: 100%;
+    width: 6vh;
+    height: fit-content;
+}
+
+.rec-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .rec-info > h2 {
@@ -94,12 +114,18 @@ footer {
     color: #ffffff;
 }
 
+.rec-info > p {
+    margin: 0;
+}
+
 .verBuyer {
     color: hsl(333, 80%, 67%);
 }
 
 .comment {
     color: #ffffff;
+    margin: 0;
+    line-height: 2vh;
 }
 
 #COLORS {
