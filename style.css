@@ -247,7 +247,7 @@ footer {
 
     .rate {
         flex-direction: column;
-        gap: 2vh;
+        gap: 1.5vh;
         padding: 3vw;
         border-radius: 2.5vw;
     }
