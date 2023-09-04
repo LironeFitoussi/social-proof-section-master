@@ -238,11 +238,16 @@ footer {
 
     header > p {
         width: 92%;
-        line-height: 3vh;
+        line-height: 2.5vh;
     }
 
-    .ratings {
-        gap: 2vh;
+    .stars-rating {
+        gap: 5vw;
+    }
+
+    .stars-rating {
+        display: flex;
+        gap: 1vh;
     }
 
     .rate {
@@ -271,6 +276,7 @@ footer {
     footer {
         height: fit-content;
         flex-direction: column;
+        gap: 5vw;
     }
 
     .recommender {
